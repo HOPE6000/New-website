@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f1e9" />
+    <title>Shop Mens Gym Wear | Vie & Bee</title>
+    <meta
+      name="description"
+      content="Shop mens training gear from Vie and Bee — t-shirts, shorts, hoodies and tanks built for the gym floor. Fast dispatch from Johannesburg, shipping SA-wide."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body data-catalog="mens">
+    <header id="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img
+            src="Womans-Product/Logo.PNG"
+            alt="Vie and Bee"
+            class="nav-logo-img"
+          />
+          <div class="nav-logo-text">
+            <span class="logo-name">Vie & Bee</span>
+            <span class="logo-tagline">Train Differently</span>
+          </div>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="Mens.html" class="nav-link active">Mens</a></li>
+          <li><a href="Womens.html" class="nav-link">Womens</a></li>
+          <li><a href="index.html#membership" class="nav-link">Membership</a></li>
+          <li><a href="Checkout.html" class="nav-link">Checkout</a></li>
+        </ul>
+        <button type="button" class="cart-nav-trigger" aria-label="Open cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count-badge">0</span>
+        </button>
+        <a href="#product-detail" class="nav-cta">Quick Buy</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Mens.html">Mens</a></li>
+          <li><a href="Womens.html">Womens</a></li>
+          <li><a href="index.html#membership">Membership</a></li>
+          <li><a href="Checkout.html" class="cream-link">Checkout</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <div class="page-hero-bg">
+          <div class="page-hero-arc-1"></div>
+          <div class="page-hero-arc-2"></div>
+        </div>
+        <div class="section-content page-hero-content">
+          <span class="eyebrow">Shop All Mens Wear</span>
+          <h1 class="page-hero-title">Pick Your <em>Kit</em></h1>
+          <p class="page-hero-sub">
+            Tap a product to view sizing, colours and full details — then send
+            it straight to checkout.
+          </p>
+        </div>
+      </section>
+
+      <!-- CATALOG (filled in by js/product-page.js) -->
+      <section class="catalog-section">
+        <div class="section-content">
+          <div class="catalog-grid" id="catalogGrid"></div>
+        </div>
+      </section>
+
+      <!-- PRODUCT DETAIL -->
+      <section class="product-detail-section" id="product-detail">
+        <div class="section-content product-detail-grid">
+          <!-- Gallery -->
+          <div class="pd-gallery">
+            <div class="pd-main-image">
+              <img
+                id="pdMainImg"
+                src="Mans-Product/Man1.jpg"
+                alt="Product image"
+              />
+            </div>
+            <div class="pd-thumbs" id="pdThumbs"></div>
+          </div>
+
+          <!-- Info -->
+          <div class="pd-info">
+            <span class="eyebrow" id="pdCategory">Leggings</span>
+            <h2 class="pd-title" id="pdTitle">Sculpt High-Waist Leggings</h2>
+            <div class="pd-price" id="pdPrice">R450</div>
+
+            <div class="pd-option-group">
+              <label>Colour: <span id="pdColourName">Black</span></label>
+              <div class="pd-swatches" id="pdColours"></div>
+            </div>
+
+            <div class="pd-option-group">
+              <label>Size</label>
+              <div class="pd-sizes" id="pdSizes"></div>
+              <p class="pd-size-error-msg" id="pdSizeError">
+                Please select a size before buying.
+              </p>
+              <a href="#size-guide" class="pd-size-guide">View size guide</a>
+            </div>
+
+            <div class="pd-option-group">
+              <label>Quantity</label>
+              <div class="pd-qty">
+                <button type="button" id="pdQtyMinus">−</button>
+                <span id="pdQtyVal">1</span>
+                <button type="button" id="pdQtyPlus">+</button>
+              </div>
+            </div>
+
+            <div class="pd-action-row">
+              <button
+                class="btn-outline pd-addcart-btn"
+                id="pdAddCartBtn"
+                type="button"
+              >
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="submit-btn pd-buy-btn" id="pdBuyBtn" type="button">
+                Buy Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <p class="form-note">
+              <i class="fa-solid fa-lock"></i> Add multiple items to your cart,
+              or buy now to check out this item straight away.
+            </p>
+
+            <div class="pd-accordion" id="size-guide">
+              <details open>
+                <summary>Details</summary>
+                <p id="pdDetails">Description loading…</p>
+              </details>
+              <details>
+                <summary>Fabric & Care</summary>
+                <p>
+                  Squat-proof 4-way stretch blend. Cold machine wash, hang dry,
+                  do not tumble dry or iron directly on prints.
+                </p>
+              </details>
+              <details>
+                <summary>Shipping & Returns</summary>
+                <p>
+                  Free delivery on orders over R650. Dispatched within 48 hours
+                  from Johannesburg. Unworn items with tags can be exchanged
+                  within 14 days.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            src="Mans-Product/Man5.jpg"
+            alt="MOM Apparel"
+            class="footer-logo-img"
+          />
+          <div class="footer-brand-text">
+            <span class="footer-name">Vie & Bee</span>
+            <span class="footer-tag">active Wear</span>
+          </div>
+        </div>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="Mens.html">Mens</a>
+          <a href="Womens.html">Womens</a>
+          <a href="index.html#membership">Membership</a>
+          <a href="Checkout.html">Checkout</a>
+        </nav>
+        <p class="footer-copy">
+          © 2026 Vie & Bee<br />Johannesburg, South Africa
+        </p>
+        <div class="footer-social" data-social></div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/product-page.js"></script>
+  </body>
+</html>
