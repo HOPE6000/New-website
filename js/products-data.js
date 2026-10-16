@@ -89,9 +89,9 @@ const PRODUCT_CATALOGS = {
       sizes: SIZES_XS_XXL,
       colours: [COLOURS.black, COLOURS.charcoal, COLOURS.olive],
       images: [
-        "Womans-Product/Woman3.jpg",
-        "Womans-Product/Woman2.jpg",
-        "Womans-Product/Woman1.jpg",
+        "Womans-Product/Woman3.JPG",
+        "Womans-Product/Woman2.JPG",
+        "Womans-Product/Woman1.JPG",
       ],
       details:
         "High-waist leggings with a wide comfort band that won't roll down mid-set. Squat-proof, opaque even under gym lighting, with a hidden waistband pocket for a key or card.",
@@ -103,9 +103,9 @@ const PRODUCT_CATALOGS = {
       sizes: SIZES_S_XXL,
       colours: [COLOURS.black, COLOURS.grey, COLOURS.navy],
       images: [
-        "Womans-Product/Woman4.jpg",
-        "Womans-Product/Woman1.jpg",
-        "Womans-Product/Woman2.jpg",
+        "Womans-Product/Woman4.JPG",
+        "Womans-Product/Woman1.JPG",
+        "Womans-Product/Woman2.JPG",
       ],
       details:
         "Oversized fit, 400gsm brushed fleece hoodie built for warm-ups and walking out the gym. Kangaroo pocket, ribbed cuffs, drawcord hood.",
@@ -117,9 +117,9 @@ const PRODUCT_CATALOGS = {
       sizes: SIZES_XS_XXL,
       colours: [COLOURS.black, COLOURS.white, COLOURS.sand],
       images: [
-        "Womans-Product/Woman1.jpg",
-        "Womans-Product/Woman2.jpg",
-        "Womans-Product/Woman3.jpg",
+        "Womans-Product/Woman1.JPG",
+        "Womans-Product/Woman2.JPG",
+        "Womans-Product/Woman3.JPG",
       ],
       details:
         "Drop-arm racerback tank in an ultralight breathable mesh blend. Built for range of motion on push day without any fabric bunching.",
@@ -131,9 +131,9 @@ const PRODUCT_CATALOGS = {
       sizes: SIZES_S_XXL,
       colours: [COLOURS.black, COLOURS.charcoal, COLOURS.armyGreen],
       images: [
-        "Womans-Product/Woman4.jpg",
-        "Womans-Product/Woman3.jpg",
-        "Womans-Product/Woman1.jpg",
+        "Womans-Product/Woman4.JPG",
+        "Womans-Product/Woman3.JPG",
+        "Womans-Product/Woman1.JPG",
       ],
       details:
         "7-inch inseam training shorts with a built-in liner and zip pocket. Four-way stretch side panels for deep squats and lunges.",
